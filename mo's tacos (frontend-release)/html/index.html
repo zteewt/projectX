@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Irish+Grover&display=swap" rel="stylesheet">
+    <title>Mo's Tacos</title>
+</head>
+<body>
+    <header>
+        <img class="logo_img" src="../лого 2-Photoroom 1 (1).png" alt="">
+        <div id='menu' class="logo">Mo's Tacos</div>
+        <nav>
+            <a href="#" class="nav-item" id="basket">КОРЗИНА</a>
+            <a href="#contacts">КОНТАКТЫ</a>
+            <a href="#" class="nav-item" id="login">ВХОД</a>
+        </nav>
+        <div class="popup" id="popup">
+            <h2>КОРЗИНА</h2>
+            <div id="basketContent">
+            </div>
+        <button id="checkout">Заказать</button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="login-popup" id="loginPopup">
+            <h2>ВХОД</h2>
+            <input type="text" id="username" placeholder="Введите логин">
+            <input type="password" id="password" placeholder="Введите пароль">
+            <button class="button" id="loginButton">Войти в аккаунт</button>
+            <div id="loginMessage" class="success-message"></div>
+            <div class="registration-link" id="showRegistration">Регистрация</div>
+        </div>
+
+        <!-- Всплывающее окно для регистрации -->
+        <div class="register-popup" id="registerPopup">
+            <h2>Регистрация</h2>
+            <input type="text" id="registerUsername" placeholder="Придумайте логин">
+            <input type="password" id="registerPassword" placeholder="Придумайте пароль">
+            <button class="button" id="registerButton">Зарегистрироваться</button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </header>
+    <div class="hero-section">
+        <h1> МЕНЮ </h1>
+        <div class="menu-buttons">
+            <a href="#tacos"><button>Tacos</button></a>
+            <a href="#burritos"><button>Burritos</button></a>
+            <a href="#nachos"><button>Nachos</button></a>
+            <a href="#burgers"><button>Burgers</button></a>
+            <a href="#sauces"><button>Sauces</button></a>
+            <a href="#drinks"><button>Drinks</button></a>
+        </div>
+    </div>
+    <main>  
+        
+    </div>
+
+        <div class="category-block" style="background-image: url('../photo_2024-12-14_00-54-50.jpg');">
+        <div id="tacos" class="category">Tacos</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="299">
+                <h3>"La Muerta"</h3>
+                <img class="image1" src="../css/tako1.jpg" />
+                <p>С говядиной, начос и соком лайма</p>
+                <button class="order-button">299₽</button>
+            </div>
+            <div class="menu-item" data-price="249">
+                <h3>"Picante de Pollo"</h3>
+                <img class="image1" src="../css/tako2.jpg" />
+                <p>С курицей, гуакамоле и соусом табаско</p>
+                <button class="order-button">249₽</button>
+            </div>
+            <div class="menu-item" data-price="349">
+                <h3>"Launche Libre"</h3>
+                <img class="image1" src="../css/tako3.jpg" />
+                <p>С сыром, чили и гватемальским кетчупом</p>
+                <button class="order-button">349₽</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-block" style="background-image: url('../Фон\ 1.jpg');">
+        <div id="burritos" class="category">Burritos</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="379">
+                <h3>"Burrito Bison"</h3>
+                <img class="image1" src="../css/bur1.jpeg" />
+                <p>С говядиной, черной фасолью и кукурузой</p>
+                <button class="order-button">379₽</button>
+            </div>
+            <div class="menu-item" data-price="359">
+                <h3>"Del Sabor"</h3>
+                <img class="image1" src="../css/bur2.JPG" />
+                <p>С курицей, кукурузой и авокадо</p>
+                <button class="order-button">359₽</button>
+            </div>
+            <div class="menu-item" data-price="299">
+                <h3>"De la Abuela"</h3>
+                 <img class="image1" src="../css/bur3.jpg" />
+                <p>С фасолью, сыром и тахини</p>
+                <button class="order-button">299₽</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="category-block" style="background-image: url('../Airbrush-3776327d4557ac78db343aeb46c49936\ 1.jpg');">
+        <div id='nachos' class="category">Nachos</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="169">
+                <h3>"El Nacho"</h3>
+                <img class="image1" src="../css/nacho1.jpg" />
+                <p>С сыром и халапеньо</p>
+                <button class="order-button">169₽</button>
+            </div>
+
+            <div class="menu-item" data-price="229">
+                <h3>"Nacho DeLuxe"</h3>
+                <img class="image1" src="../css/nacho3.jpg" />
+                <p>С курицей и овощами</p>
+                <button class="order-button">229₽</button>
+            </div>
+
+            <div class="menu-item" data-price="229">
+                <h3>"Don Pollo Pack"</h3>
+                <img class="image1" src="../css/nachos2.jpg" />
+                <p>Мега большая порция хрустящих начо</p>
+                <button class="order-button">229₽</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-block" style="background-image: url('../Airbrush-bb81e218d8067bf927fce644975082ba\ 2.jpg');">
+        <div id="burgers" class="category">Burgers</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="479">
+                <h3>"Tonka Burger"</h3>
+                <img class="image1" src="../css/BBQ.jpg" />
+                <p>C куриной котлетой и перцем хабанеро</p>
+                <button class="order-button">479₽</button>
+            </div>
+
+            <div class="menu-item" data-price="679">
+                <h3>"Сrying Johnny"</h3>
+                <img class="image1" src="../css/johhnny.jpg" />
+                <p>С говяжьей котлетой и соусом табаско</p>
+                <button class="order-button">679₽</button>
+            </div>
+
+            <div class="menu-item" data-price="2093">
+                <h3>"UltiMeatum"</h3>
+                <img class="image1" src="../css/ulti3.jpg" />
+                <p>Один бургер в руки! Доступен 1 раз в 100 лет</p>
+                <button class="order-button">2093₽</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-block" style="background-image: url('../Airbrush-World___USA_Beauty_of_of_Utah__USA_059348_\ 2.jpg');">
+        <div id='sauces' class="category">Sauces</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="99">
+                <h3>"XTRA Cheese"</h3>
+                <img class="image1" src="../css/sauce-1-8.jpg" />
+                <p>Супер сырный соус из 2-х видов сыра и халапеньо</p>
+                <button class="order-button">99₽</button>
+            </div>
+
+            <div class="menu-item" data-price="99">
+                <h3>"Salsa E Picante"</h3>
+                <img class="image1" src="../css/salsa.jpg" />
+                <p>Пикантная сальса с перцем чили</p>
+                <button class="order-button">99₽</button>
+            </div>
+
+            <div class="menu-item" data-price="99">
+                <h3>"Mole Amarillo"</h3>
+                <img class="image1" src="../css/Mole.jpg" />
+                <p>Овощной соус с добавлением кукурузной муки</p>
+                <button class="order-button">99₽</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-block" style="background-image: url('../Airbrush-bb81e218d8067bf927fce644975082ba\ 2.jpg');">
+        <div id="drinks" class="category">Drinks</div>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="379">
+                <h3>"Cactus Goa Tea"</h3>
+                <img class="image1" src="../css/slurp.jpg" />
+                <p>Напиток из освежающего кактуса с добавлением сока голубой малины</p>
+                <button class="order-button">379₽</button>
+            </div>
+
+            <div class="menu-item" data-price="399">
+                <h3>"FaJibinYO Drink"</h3>
+                  <img class="image1" src="../css/bigsh.jpg" />
+                  <p>Добавляет +50 к уверенности</p>
+                <button class="order-button">399₽</button>
+            </div>
+
+            <div class="menu-item" data-price="419">
+                <h3>"Vadyamba Revenge"</h3>
+                <img class="image1" src="../css/Screenshot_9.jpg" />
+                <p>Мексиканский томатный напиток</p>
+                <button class="order-button">419₽</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div id='contacts' class="footer-title">
+            <h1>ПРИЯТНОГО АППЕТИТА</h1>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>АДРЕС:</h2>
+                <p>БОЛЬШОЙ ЧЕРКАССКИЙ ПЕР., 17,<br>
+                   БОЛЬШОЙ ЧЕРКАССКИЙ ПЕР., 1,<br>
+                   БОЙ ЧЕРК ПЕР., 32</p>
+            </div>
+            <div class="footer-section">
+                <h2>ЧАСЫ РАБОТЫ:</h2>
+                <p>ПН-СР 12:00-00:00<br>
+                   ЧТ 12:00-05:00<br>
+                   ПТ-СБ 12:00-06:00<br>
+                   ВС 12:00-00:00</p>
+            </div>
+            <div class="footer-section">
+                <h2>КОНТАКТЫ:</h2>
+                <p>ТЕЛЕФОН: 8-888-888-88-88<br>
+                   EMAIL: MOSTACOS@GMAIL.COM</p>
+            </div>
+            <div class="footer-button">
+                <a href="#menu" class="menu_button">В МЕНЮ ↺</a>
+        </div>
+   </div> 
+</footer>
+<script src="../scripts/basket"></script>
+    <script src="../scripts/logpass"></script>
+</body>
+</html>
